@@ -1,8 +1,15 @@
-# 🚀 Typing Speed Test App
+<p align="center">
+  <img src="Screenshots/Welcome.png" alt="Typing App Preview" width="600"/>
+</p>
 
-Welcome to the **Typing Speed Test App** — a fast, fun, and feature-packed web application to test and improve your typing speed.
+<h1 align="center">🚀 Typing Speed Test App</h1>
+<p align="center">
+  A fast, fun, and feature-packed web application to test and improve your typing speed.
+</p>
 
-🌐 **Live Demo:** [Click Here to Try It!](https://typing-race-scza.onrender.com)
+<p align="center">
+  <a href="https://typing-race-scza.onrender.com"><strong>🌐 Live Demo Here</strong></a>
+</p>
 
 ---
 
@@ -58,24 +65,25 @@ Welcome to the **Typing Speed Test App** — a fast, fun, and feature-packed web
 
 ## 🛠️ Local Setup Instructions
 
-1. **Clone the Repository**
-
 ```bash
+# 1. Clone the Repository
 git clone https://github.com/SaiPriya0606/typing-speed-test.git
 cd typing-speed-test
 
-2. Install Dependencies
+# 2. Install Dependencies
 npm install
 
-3. Start the Server
+# 3. Start the Server
 node server.js
+
 
 Then open: http://localhost:3000
 
 
 🚀 Deployment
 This app is hosted on Render.
-Live URL: https://typing-race-scza.onrender.com
+🌍 Live URL: https://typing-race-scza.onrender.com
+
 
 📁 Folder Structure
 typing-race/
@@ -86,7 +94,7 @@ typing-race/
 │   ├── main.js
 │   └── style.css
 ├── Screenshots/
-│   ├── welcome.png
+│   ├── Welcome.png
 │   ├── index1.png
 │   ├── index2.png
 │   ├── index3.png
@@ -99,16 +107,10 @@ typing-race/
 
 🙋‍♀️ Author
 👩‍💻 Sai Priya
-📫 GitHub Profile-https://github.com/SaiPriya0606
-
-⭐ Support
-If you found this useful, consider giving it a ⭐ on GitHub-https://github.com/SaiPriya0606!
+📫 GitHub Profile
 
 
-✅ After adding the screenshots and this `README.md`, run:
-
-
-git add README.md Screenshots/
-git commit -m "📝 Added full README with screenshots"
-git push
+## ⭐ Support
+If you found this project useful, please consider giving it a ⭐  
+👉 [GitHub Repository](https://github.com/SaiPriya0606/typing-speed-test)
 
