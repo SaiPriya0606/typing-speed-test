@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Race - Welcome</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="welcome-screen">
+  <div class="container">
+    <h1>Welcome to Typing Race</h1>
+
+    <!-- 🔘 Mode Selection -->
+    <div class="mode-selection">
+      <label><input type="radio" name="mode" value="solo" checked /> Single Player</label>
+      <label><input type="radio" name="mode" value="multi" /> Multiplayer</label>
+      <label><input type="radio" name="mode" value="duel" /> Typing Duel (1v1)</label>
+    </div>
+
+    <!-- 👥 Player Name Input -->
+    <div id="players" class="player-names">
+      <input type="text" id="player1" placeholder="Player Name" required />
+    </div>
+
+    <!-- ▶️ Start Button -->
+    <button id="startBtn">🚀 Start Game</button>
+
+    <hr />
+
+    <!-- ⚔️ Typing Duel -->
+    <h2>⚔️ Typing Duel</h2>
+    <input type="text" id="duelPlayerName" placeholder="Your Name" />
+    <button id="createDuel">Create Duel</button>
+    <input type="text" id="duelLink" placeholder="Duel Link" readonly />
+    <button id="joinDuel">Join Duel</button>
+  </div>
+
+  <script>
+    // 🔧 Elements
+    const playersDiv = document.getElementById("players");
+    const modeRadios = document.getElementsByName("mode");
+    const startBtn = document.getElementById("startBtn");
+
+    const createDuelBtn = document.getElementById("createDuel");
+    const duelLink = document.getElementById("duelLink");
+    const duelPlayerNameInput = document.getElementById("duelPlayerName");
+    const joinDuelBtn = document.getElementById("joinDuel");
+
+    // 🔁 Update inputs based on mode
+    function updatePlayerInputs() {
+      const selectedMode = document.querySelector('input[name="mode"]:checked').value;
+      if (selectedMode === "multi") {
+        playersDiv.innerHTML = `
+          <input type="text" id="player1" placeholder="Player 1 Name" required /><br>
+          <input type="text" id="player2" placeholder="Player 2 Name" required />
+        `;
+      } else {
+        playersDiv.innerHTML = `<input type="text" id="player1" placeholder="Player Name" required />`;
+      }
+      // ✅ Clear duel link when switching mode
+      duelLink.value = "";
+    }
+
+    modeRadios.forEach(radio => {
+      radio.addEventListener("change", updatePlayerInputs);
+    });
+
+    // Initial setup
+    updatePlayerInputs();
+
+    // 🚀 Start Game Button
+    startBtn.onclick = () => {
+      const mode = document.querySelector('input[name="mode"]:checked').value;
+      const p1 = document.getElementById("player1")?.value.trim();
+      const p2 = mode === "multi" ? document.getElementById("player2")?.value.trim() : "";
+
+      if (!p1 || (mode === "multi" && !p2)) {
+        alert("Please enter all player names.");
+        return;
+      }
+
+      let url = `index.html?mode=${mode}&p1=${encodeURIComponent(p1)}`;
+      if (mode === "multi") url += `&p2=${encodeURIComponent(p2)}`;
+
+      window.location.href = url;
+    };
+
+    // 🛡 Create Duel
+    createDuelBtn.onclick = () => {
+      const name = duelPlayerNameInput.value.trim();
+      if (!name) return alert("Enter your name to create duel.");
+
+      const room = Math.random().toString(36).substring(2, 8);
+      const duelURL = `${location.origin}/index.html?mode=duel&p1=${encodeURIComponent(name)}&room=${room}`;
+
+      duelLink.value = duelURL;
+      duelLink.select();
+      document.execCommand("copy");
+      alert("Duel link copied! Share it with your friend.");
+    };
+
+    // 🔗 Join Duel
+    joinDuelBtn.onclick = () => {
+      const link = duelLink.value.trim();
+      if (!link) {
+        alert("Paste the duel link to join.");
+        return;
+      }
+      window.location.href = link;
+    };
+  </script>
+</body>
+</html>

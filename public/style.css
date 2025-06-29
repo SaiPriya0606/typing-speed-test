@@ -1,0 +1,256 @@
+/* === Global Styles === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffffdd;
+  padding: 2rem;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* === Typography === */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* === Word Display === */
+.word-box {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.word-display {
+  font-size: 1.3rem;
+  font-weight: 500;
+  min-height: 3rem;
+}
+
+/* === Input Box === */
+.input-box {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* === Stats === */
+.stats {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* === Selectors & Buttons === */
+.selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.selectors label {
+  font-weight: 500;
+}
+
+.selectors select,
+.selectors button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+#submitBtn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* === Custom Section === */
+.custom-section {
+  margin: 1.5rem 0;
+}
+
+.custom-section textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  resize: vertical;
+}
+
+.custom-section button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* === Share & Leaderboard === */
+.share-link {
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+#leaderboard,
+#mpLeaderboard {
+  list-style: none;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+#leaderboard li,
+#mpLeaderboard li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* === Chart === */
+#progressChartContainer {
+  margin: 1.5rem 0;
+}
+
+/* === Theme Toggle === */
+#themeToggle {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* === Dark Mode === */
+.dark-mode {
+  background: #111;
+  color: #eee;
+}
+
+.dark-mode .container {
+  background: #1a1a1a;
+  color: #eee;
+}
+
+.dark-mode .word-box {
+  background: #2a2a2a;
+}
+
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea,
+.dark-mode button {
+  background: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+/* === Countdown === */
+.countdown {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#countdown {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  color: #ff5722;
+}
+
+
+/* === Welcome Page (if applicable) === */
+.welcome-screen {
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+}
+
+.mode-selection {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.player-names input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #999;
+}
+
+#startBtn,
+#createDuel,
+#joinDuel {
+  padding: 0.6rem 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#startBtn:hover,
+#createDuel:hover,
+#joinDuel:hover {
+  background-color: #004a99;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .selectors {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input-box {
+    font-size: 1.1rem;
+  }
+
+  .word-display {
+    font-size: 1.1rem;
+  }
+
+  #themeToggle {
+    margin-top: 2rem;
+  }
+}

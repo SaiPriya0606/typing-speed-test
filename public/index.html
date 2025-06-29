@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Typing Race Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Race</h1>
+
+    <div id="countdown" class="countdown"></div>
+
+    <!-- 📝 Word Display + Input -->
+    <div class="word-box">
+  <p id="wordDisplay" class="word-display">Loading...</p>
+  <input type="text" id="inputBox" class="input-box" placeholder="Type here..." autocomplete="off" />
+  <button id="submitBtn">✔️ Submit</button>
+</div>
+
+
+    <!-- 📊 Stats -->
+    <div id="stats" class="stats">
+      <span id="wpmStat">WPM: 0</span> |
+      <span id="accuracyStat">Accuracy: 100%</span> |
+      <span id="mistakesStat">Mistakes: 0</span> |
+      <span id="timerStat">Time Left: 60s</span>
+    </div>
+
+    <!-- 🔧 Selectors -->
+    <div class="selectors">
+      <label for="difficulty">🎚️ Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+
+      <label for="categorySelector">📚 Category:</label>
+      <select id="categorySelector">
+        <option value="none" selected>None</option>
+        <option value="quotes">Quotes</option>
+        <option value="paragraphs">Paragraphs</option>
+        <option value="news">News</option>
+        <option value="vocab">Vocabulary</option>
+      </select>
+
+      <label for="timerSelector">⏱ Timer:</label>
+      <select id="timerSelector">
+        <option value="15">15s</option>
+        <option value="30">30s</option>
+        <option value="60" selected>1 min</option>
+        <option value="120">2 min</option>
+      </select>
+
+      <button id="pauseResumeBtn">⏸ Pause</button>
+      <button id="restartBtn">🔁 Restart</button>
+    </div>
+
+    <!-- 🧾 Custom Text -->
+    <div id="customInputSection" class="custom-section">
+      <textarea id="customParagraph" placeholder="Type your custom paragraph..."></textarea>
+      <button id="useCustomParagraph">Load Custom Paragraph</button>
+    </div>
+
+    <!-- 🔗 Share Result -->
+    <div id="shareLink" class="share-link"></div>
+    <button id="shareBtn">🔗 Share Score</button>
+
+    <!-- 🏆 Leaderboards -->
+    <h2 id="leaderboardHeader">🏆 Leaderboard</h2>
+    <ul id="leaderboard"></ul>
+
+    <h2 id="mpLeaderboardHeader" style="display:none;">🌍 Multiplayer History</h2>
+    <ul id="mpLeaderboard"></ul>
+
+    <!-- 📈 Progress Chart -->
+    <div id="progressChartHeader"><h2>📈 Progress Chart</h2></div>
+    <div id="progressChartContainer">
+      <canvas id="progressChart" height="200"></canvas>
+    </div>
+
+    <div id="raceBoard" style="display: none;"></div>
+
+    <!-- 🌓 Theme -->
+    <button id="themeToggle">🌓 Toggle Theme</button>
+  </div>
+
+  <!-- 📜 Main Game Logic -->
+  <script src="main.js"></script>
+</body>
+</html>
