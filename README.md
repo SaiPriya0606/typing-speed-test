@@ -40,7 +40,7 @@ Welcome to the **Typing Speed Test App** — a fast, fun, and feature-packed web
 ## 🖼️ Screenshots
 
 ### 🏁 Welcome Page
-![Welcome](Screenshots/welcome.png)
+![Welcome](Screenshots/Welcome.png)
 
 ### ⌨️ Game Start
 ![Game Start](Screenshots/index1.png)
@@ -64,10 +64,10 @@ Welcome to the **Typing Speed Test App** — a fast, fun, and feature-packed web
 git clone https://github.com/SaiPriya0606/typing-speed-test.git
 cd typing-speed-test
 
-2. **Install Dependencies**
+2. Install Dependencies
 npm install
 
-3. **Start the Server**
+3. Start the Server
 node server.js
 
 Then open: http://localhost:3000
@@ -99,10 +99,10 @@ typing-race/
 
 🙋‍♀️ Author
 👩‍💻 Sai Priya
-📫 GitHub Profile
+📫 GitHub Profile-https://github.com/SaiPriya0606
 
 ⭐ Support
-If you found this useful, consider giving it a ⭐ on GitHub!
+If you found this useful, consider giving it a ⭐ on GitHub-https://github.com/SaiPriya0606!
 
 
 ✅ After adding the screenshots and this `README.md`, run:
