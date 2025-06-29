@@ -107,7 +107,7 @@ If you found this useful, consider giving it a ⭐ on GitHub-https://github.com/
 
 ✅ After adding the screenshots and this `README.md`, run:
 
-```bash
+
 git add README.md Screenshots/
 git commit -m "📝 Added full README with screenshots"
 git push
