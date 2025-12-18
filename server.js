@@ -4,7 +4,7 @@ const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 const path = require('path');
 const PORT = process.env.PORT || 3000;
-
+server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 // FORCE welcome.html as homepage
 app.get('/', (req, res) => {
