@@ -1,116 +1,109 @@
-<p align="center">
-  <img src="Screenshots/Welcome.png" alt="Typing App Preview" width="600"/>
-</p>
-
-<h1 align="center">🚀 Typing Speed Test App</h1>
-<p align="center">
-  A fast, fun, and feature-packed web application to test and improve your typing speed.
-</p>
+# Typing Speed Race 🏎️💨
 
 <p align="center">
-  <a href="https://typing-race-scza.onrender.com"><strong>🌐 Live Demo Here</strong></a>
+  <img src="https://img.shields.io/badge/Express.js-4.18.2-brightgreen" alt="Express">
+  <img src="https://img.shields.io/badge/Socket.io-4.8.1-blue" alt="Socket.io">
+  <img src="https://img.shields.io/badge/Chart.js-latest-orange" alt="Chart.js">
+  <img src="https://img.shields.io/badge/Node.js-20+-green" alt="Node.js">
 </p>
 
----
+<p align="center">
+  <img src="public/Screenshots/Welcome.png" alt="Typing App Preview" width="600">
+</p>
 
-## ✨ Features
+## 🚀 **Live Demo**
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/SaiPriya0606/typing-speed-test)
 
-### ✅ Core Typing Game Features
-- ⌨️ Typing speed test with real-time **WPM** & **accuracy**
-- ⏱ Timer options: 15s, 30s, 60s, 120s
-- ❌ Mistake tracking
-- 📊 Progress chart (Chart.js)
-- 🏆 Leaderboard (stored using localStorage)
+**Live URL:** [https://typing-race-scza.onrender.com](https://typing-race-scza.onrender.com)
 
-### 🎮 Game Modes
-- 👤 Single Player Mode
-- 🤝 Multiplayer Mode (Socket.io)
-- ⚔️ Typing Duel (1v1 via shareable link)
+## ✨ **Features**
 
-### 📚 Content Modes
-- 📖 Quotes
-- 📜 Paragraphs
-- 📰 News
-- 🧠 Vocabulary
-- 🎚️ Easy / Medium / Hard difficulties
+### **Core Typing Game**
+- ✅ Real-time WPM & Accuracy tracking
+- ✅ Timer options: 15s, 30s, 60s, 120s
+- ✅ Mistake tracking & highlighting
+- ✅ Progress charts (Chart.js)
+- ✅ LocalStorage Leaderboard
 
-### 🧠 Extra Functionalities
-- 🌗 Light / Dark theme toggle
-- 🔁 Restart and ⏸ Pause/▶️ Resume options
-- 🧾 Custom Test Mode (User types their own paragraph)
-- 🔗 Shareable result links with WPM and accuracy
-- 🎉 Confetti animation for winners
-- 📱 Fully responsive for mobile and desktop
+### **Game Modes**
+- 🎮 **Single Player** - Solo practice
+- 🌐 **Multiplayer** - Global room competition
+- ⚔️ **Typing Duel 1v1** - Private friend battles
 
----
+### **Content Modes**
+Easy | Medium | Hard
+Quotes | Paragraphs | News | Vocabulary
 
-## 🖼️ Screenshots
+### **Extra Features**
+- 🌙 Light/Dark theme toggle
+- ⏸️ Pause/Resume & Restart
+- ✏️ Custom paragraph mode
+- 📱 Fully responsive (Mobile + Desktop)
+- 🎉 Confetti winner animations
+- 🔗 Shareable result links
 
-### 🏁 Welcome Page
-![Welcome](Screenshots/Welcome.png)
+## 📱 **Screenshots**
+| Welcome Page | Game Interface | Progress Chart |
+|--------------|----------------|----------------|
+| ![Welcome](public/Screenshots/Welcome.png) | ![Game](public/Screenshots/index1.png) | ![Chart](public/Screenshots/index4.png) |
 
-### ⌨️ Game Start
-![Game Start](Screenshots/index1.png)
+## 🛠️ **Local Setup**
 
-### ⌨️ Typing In Progress
-![In Progress](Screenshots/index2.png)
-
-### 🏆 Game Over
-![Game Over](Screenshots/index3.png)
-
-### 📈 Progress Chart
-![Chart](Screenshots/index4.png)
-
----
-
-## 🛠️ Local Setup Instructions
-
-```bash
-# 1. Clone the Repository
+1. Clone the repository
 git clone https://github.com/SaiPriya0606/typing-speed-test.git
 cd typing-speed-test
 
-# 2. Install Dependencies
+2. Install dependencies
 npm install
 
-# 3. Start the Server
-node server.js
+3. Start the server
+npm start
 
+**Open:** [http://localhost:3000](http://localhost:3000)
 
-Then open: http://localhost:3000
-
-
-🚀 Deployment
-This app is hosted on Render.
-🌍 Live URL: https://typing-race-scza.onrender.com
-
-
-📁 Folder Structure
+## 🏗️ **Folder Structure**
 typing-race/
-├── node_modules/
+├── server.js # Express + Socket.io server
+├── package.json # Dependencies
 ├── public/
-│   ├── index.html
-│   ├── welcome.html
-│   ├── main.js
-│   └── style.css
-├── Screenshots/
-│   ├── Welcome.png
-│   ├── index1.png
-│   ├── index2.png
-│   ├── index3.png
-│   └── index4.png
-├── server.js
-├── package.json
-├── package-lock.json
-├── .gitignore
-└── README.md
+│ ├── index.html # Main game
+│ ├── welcome.html # Mode selection
+│ ├── main.js # Game logic
+│ └── style.css # Responsive styles
+└── .gitignore # Clean git
 
-🙋‍♀️ Author
-👩‍💻 Sai Priya
-📫 GitHub Profile
+## ⚙️ **Tech Stack**
+Frontend: HTML5, CSS3, Vanilla JS, Chart.js, Socket.io-client
+Backend: Node.js, Express.js, Socket.io
+Storage: LocalStorage (Leaderboards)
+Deployment: Render.com
 
+## 🎮 **How to Play**
 
-## ⭐ Support
-If you found this project useful, please consider giving it a ⭐  
-👉 [GitHub Repository](https://github.com/SaiPriya0606/typing-speed-test)
+1. **Choose Mode:** Single Player / Multiplayer / Typing Duel
+2. **Enter Name(s):** Player 1 & Player 2 (for multiplayer)
+3. **Select Difficulty:** Easy/Medium/Hard
+4. **Start Typing:** Real-time WPM tracking
+5. **Beat the Timer:** Highest WPM wins! 🏆
 
+## 🤝 **Contributing**
+Fork the repo
+
+Create feature branch (git checkout -b feature/amazing-feature)
+
+Commit changes (git commit -m 'Add amazing feature')
+
+Push to branch (git push origin feature/amazing-feature)
+
+Open Pull Request
+
+## 📄 **License**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 **Author**
+**Sai Priya**  
+[GitHub Profile](https://github.com/SaiPriya0606) | [Portfolio](https://saipriya.dev)
+
+---
+
+⭐ **Star this repo if you found it useful!**

@@ -1,4 +1,3 @@
-/* === Global Styles === */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +11,12 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   padding: 20px;
 }
 
 .container {
-  background: #ffffffdd;
+  background: rgba(255, 255, 255, 0.95);
   padding: 2rem;
   border-radius: 20px;
   max-width: 800px;
@@ -25,13 +24,12 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-/* === Typography === */
 h1, h2 {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-/* === Word Display === */
+/* Word Display */
 .word-box {
   background: #f0f0f0;
   padding: 1rem;
@@ -45,7 +43,7 @@ h1, h2 {
   min-height: 3rem;
 }
 
-/* === Input Box === */
+/* Input Box */
 .input-box {
   width: 100%;
   padding: 0.8rem;
@@ -56,7 +54,15 @@ h1, h2 {
   outline: none;
 }
 
-/* === Stats === */
+.submitBtn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Stats */
 .stats {
   margin: 1rem 0;
   text-align: center;
@@ -64,7 +70,7 @@ h1, h2 {
   font-weight: 500;
 }
 
-/* === Selectors & Buttons === */
+/* Selectors & Buttons */
 .selectors {
   display: flex;
   flex-wrap: wrap;
@@ -88,16 +94,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-#submitBtn {
-  padding: 5px 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-
-/* === Custom Section === */
+/* Custom Section */
 .custom-section {
   margin: 1.5rem 0;
 }
@@ -117,7 +114,7 @@ h1, h2 {
   padding: 0.5rem 1rem;
 }
 
-/* === Share & Leaderboard === */
+/* Share & Leaderboard */
 .share-link {
   margin: 1rem 0;
   text-align: center;
@@ -125,25 +122,23 @@ h1, h2 {
   word-break: break-word;
 }
 
-#leaderboard,
-#mpLeaderboard {
+#leaderboard, #mpLeaderboard {
   list-style: none;
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
-#leaderboard li,
-#mpLeaderboard li {
+#leaderboard li, #mpLeaderboard li {
   padding: 0.3rem 0;
   border-bottom: 1px solid #ddd;
 }
 
-/* === Chart === */
+/* Chart */
 #progressChartContainer {
   margin: 1.5rem 0;
 }
 
-/* === Theme Toggle === */
+/* Theme Toggle */
 #themeToggle {
   display: block;
   margin: 0 auto;
@@ -156,7 +151,7 @@ h1, h2 {
   cursor: pointer;
 }
 
-/* === Dark Mode === */
+/* Dark Mode */
 .dark-mode {
   background: #111;
   color: #eee;
@@ -180,13 +175,14 @@ h1, h2 {
   border-color: #555;
 }
 
-/* === Countdown === */
+/* Countdown */
 .countdown {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 #countdown {
   font-size: 3rem;
   font-weight: bold;
@@ -195,8 +191,7 @@ h1, h2 {
   color: #ff5722;
 }
 
-
-/* === Welcome Page (if applicable) === */
+/* Welcome Page */
 .welcome-screen {
   background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
 }
@@ -217,9 +212,7 @@ h1, h2 {
   border: 1px solid #999;
 }
 
-#startBtn,
-#createDuel,
-#joinDuel {
+#startBtn, #createDuel, #joinDuel {
   padding: 0.6rem 1.2rem;
   background-color: #0066cc;
   color: white;
@@ -229,27 +222,21 @@ h1, h2 {
   cursor: pointer;
 }
 
-#startBtn:hover,
-#createDuel:hover,
-#joinDuel:hover {
+#startBtn:hover, #createDuel:hover, #joinDuel:hover {
   background-color: #004a99;
 }
 
-/* === Responsive === */
+/* Responsive */
 @media (max-width: 600px) {
   .selectors {
     flex-direction: column;
     align-items: stretch;
   }
-
-  .input-box {
+  
+  .input-box, .word-display {
     font-size: 1.1rem;
   }
-
-  .word-display {
-    font-size: 1.1rem;
-  }
-
+  
   #themeToggle {
     margin-top: 2rem;
   }
