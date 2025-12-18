@@ -21,7 +21,7 @@ Track **WPM**, **accuracy**, and **progress charts** while improving typing skil
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/SaiPriya0606/typing-speed-test)
 
 🔗 **Live URL:**  
-👉 https://typing-race-scza.onrender.com
+👉 https://typing-speed-test-9s3o.onrender.com
 
 ---
 
