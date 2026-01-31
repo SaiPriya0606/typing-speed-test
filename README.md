@@ -136,7 +136,9 @@ typing-speed-test/
 │   ├── style.css        # Styling
 │   └── Screenshots/
 └── .gitignore
-⚙️ Tech Stack
+
+
+## ⚙️ Tech Stack
 
 Frontend
 
@@ -166,7 +168,7 @@ Deployment
 
 Render.com
 
-🧩 Troubleshooting
+## 🧩 Troubleshooting
 
 ❌ Page not loading?
 
@@ -192,7 +194,7 @@ Confirm Chart.js is properly loaded
 
 Reload and restart the game once
 
-🤝 Contributing
+## 🤝 Contributing
 
 Fork the repository
 
@@ -210,11 +212,11 @@ git push origin feature/new-feature
 
 Open a Pull Request
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Sai Priya
 🔗 GitHub: https://github.com/SaiPriya0606
