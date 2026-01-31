@@ -167,6 +167,7 @@ Deployment
 Render.com
 
 🧩 Troubleshooting
+
 ❌ Page not loading?
 
 Ensure server is running (npm start)
