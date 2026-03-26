@@ -18,9 +18,6 @@ Track **WPM**, **accuracy**, and **progress charts** while improving typing skil
 
 ## 🚀 Live Demo
 
-🔗 **Live URL:**  
-👉 https://typing-speed-test-9s3o.onrender.com  
-
 📝 App opens with a **Welcome Page**, then redirects to the game after mode selection.
 
 ---
